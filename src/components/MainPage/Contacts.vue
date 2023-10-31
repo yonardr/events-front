@@ -77,7 +77,7 @@
             Запись по договоренности
           </a>
 
-          <router-link :to="{name: 'main'}"><MyButton :color="'white'" class="btn">Записаться на сеанс</MyButton></router-link>
+          <router-link :to="{name: 'sessions'}"><MyButton :color="'white'" class="btn">Записаться на сеанс</MyButton></router-link>
         </div>
       </div>
     </div>
@@ -89,13 +89,9 @@
 import Title from "@/components/UI/Title.vue";
 import { YandexMap, YandexMarker } from 'vue-yandex-maps'
 import MyButton from "@/components/UI/MyButton.vue";
-import router from "@/router";
+
 export default {
-  methods: {
-    router() {
-      return router
-    }
-  },
+
   components: {MyButton, Title, YandexMap, YandexMarker},
   data() {
     return {
@@ -144,6 +140,7 @@ export default {
   font-weight: 200;
   line-height: 140%;
   margin-top: 25px;
+  text-decoration: none;
   svg{
     margin-bottom: 5px;
     margin-right: 20px;
@@ -154,6 +151,6 @@ margin-top: 25px;
 }
 .map{
   width: 850px;
-  height: 580px
+  height: 600px
 }
 </style>
