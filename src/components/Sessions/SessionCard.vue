@@ -25,9 +25,7 @@ export default {
   components: {NavBar, Title},
 setup() {
  const {event} = useFetchOneEvent({id: useRoute().params.id})
-  function imageUrl(value) {
-   return new URL(`${process.env.VUE_APP_API_URL}/${value}`, import.meta.url).href
-  }
+  const imageUrl = (value) => new URL(`${process.env.VUE_APP_API_URL}/${value}`, import.meta.url).href
   return { event, imageUrl}
 }
 
