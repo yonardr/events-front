@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper__header" :class="uu">
+  <nav class="wrapper__header" :class="uu">
   <div class="block__header">
     <router-link :to="{name: 'main', hash: '#start'}" class="img"></router-link>
     <div class="links">
@@ -15,8 +15,7 @@
 
   </div>
     <div class="line"></div>
-  </div>
-
+  </nav>
 </template>
 
 <script>
