@@ -1,7 +1,6 @@
 <template>
   <div class="wrapper__header" :class="uu">
   <div class="block__header">
-<!--      <div class="img"></div>-->
     <router-link :to="{name: 'main', hash: '#start'}" class="img"></router-link>
     <div class="links">
   <router-link :to="{name: 'main', hash: '#start'}" class="link">Главная</router-link>
@@ -91,12 +90,5 @@ export default {
   transition: all 0.6s ease 0s;
   box-shadow: rgba(0, 0, 0, 0.07) 15px 15px 15px 15px;
 
-}
-.line{
-  //width: 1300px;
-  //height: 2px;
-  //
-  //background-color: #fff;
-  //opacity: 0.3;
 }
 </style>
