@@ -1,5 +1,5 @@
 <template>
-  <div class="w">
+  <div class="delete__container">
   <Title style="margin-top: 30px">Удаление</Title>
 <div class="view">
   <div v-for="(item, index) in events" class="card" style="width: 18rem;" :key="item.id">
@@ -49,7 +49,7 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
 }
-.w{
+.delete__container{
   height: 100vh;
 }
 </style>
