@@ -1,5 +1,7 @@
 import {ref} from "vue";
 import axios from "axios";
+
+//Реализация авторизации посредством jwt токенов
 export async function useAuth(init ={}){
     const jwt = ref('')
     try{
