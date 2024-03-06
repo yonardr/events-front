@@ -3,11 +3,10 @@
     <NavBar />
     <div class="content">
       <Title>Сеансы</Title>
-      <div v-for="item in events" style="margin-bottom: 35px">
+      <div v-for="item in events" class="session__item">
         <SessionItem :data="item"/>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -32,5 +31,14 @@ export default {
   top: 180px;
   width: 1300px;
   margin: 0 auto;
+}
+.session__item{
+  margin-bottom: 35px
+}
+@media (max-width: 1023px) {
+  .content{
+    width: 100%;
+    padding: 20px;
+  }
 }
 </style>
